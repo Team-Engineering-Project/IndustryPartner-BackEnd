@@ -1,0 +1,11 @@
+{
+    "firstname": "joe",
+    "lastname": "bloggs",
+    "profileImage": "link/to/image.jpg",
+    "pronouns": "he/him",
+    "dfSubject": "SE",
+    "dfGraduationDate": "June 2022",
+    "UniversityDegree": "English",
+    "University": "Brighton University",
+    "Nationality": "British"
+}
