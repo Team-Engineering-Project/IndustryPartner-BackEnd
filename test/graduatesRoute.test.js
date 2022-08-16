@@ -7,40 +7,54 @@ import chaiHttp from 'chai-http';
 
 //require other code for testing
 import server from '../app.js';
-// import testGraduate from '../testGraduate.json' assert {type: "json"};
+import testGraduate from '../testGraduate.json' assert {type: "json"};
+import GraduateProfile from '../models/graduateProfile.model.js';
 
 chai.use(chaiHttp);
 
 describe(`Testing requests on the database`, () => {
 
-    // Need mongo data model and for app.js to implement mongoose db connection before can implement this.  
+    beforeEach(async () => {
+        await GraduateProfile.deleteMany()
+            .then(() => console.log(`Database cleared`))
+            .catch(error => {
+                console.log(`Error clearing graduates collection`);
+                throw new Error();
+            });
 
-    // beforeEach(async () => {
-    //     await Graduate.deleteMany()
-    //         .then(() => console.log(`Database cleared`))
-    //         .catch(error => {
-    //             console.log(`Error clearing`);
-    //             throw new Error();
-    //         });
-
-    //     await Graduate.insertMany(testGraduate)
-    //         .then(() => console.log(`Database populated with test Todos`))
-    //         .catch(error => {
-    //             console.log(`Error inserting`);
-    //             throw new Error();
-    //         });
-    // });
+        await GraduateProfile.insertMany(testGraduate)
+            .then(() => console.log(`Database populated with test graduate profile`))
+            .catch(error => {
+                console.log(`Error inserting graduate profile`);
+                throw new Error();
+            });
+    });
 
     describe(`GET - '/graduates'`, () => {
-        it(`should return all of the graduates as an array`, async () => {
+        it(`should receive a response with status code 200`, async () => {
             const res = await chai.request(server)
                 .get(`/graduates`)
                 .send();
 
             expect(res).to.have.status(200);
+        });
+
+        it(`should return an array`, async () => {
+            const res = await chai.request(server)
+                .get(`/graduates`)
+                .send();
+
             expect(res.body).to.be.an(`array`);
-            expect(res.body.length).to.be.equal(1) // TODO - replace hard coded 1 with something that will match number of testGraduates added to db in beforeEach().
-        })
+
+        });
+        it(`should be the correct length`, async () => {
+            const res = await chai.request(server)
+                .get(`/graduates`)
+                .send();
+
+
+            expect(res.body.length).to.be.equal([testGraduate].length);
+        });
     })
 
 });
