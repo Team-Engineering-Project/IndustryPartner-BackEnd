@@ -8,7 +8,8 @@ const testData = {
             "dfSubject": "SE",
             "dfGraduationDate": "June 2022",
             "universityDegree": "English",
-            "university": "Brighton University",
+            "university": "Brighton University", 
+            "OracleCertifiedAssociateScore": 90,
             "nationality": "British"
         },
         {
@@ -20,6 +21,7 @@ const testData = {
             "dfGraduationDate": "June 2022",
             "universityDegree": "English",
             "university": "Example University",
+            "PythonExamScore": 80,
             "nationality": "Polish"
         },
         {
@@ -31,6 +33,7 @@ const testData = {
             "dfGraduationDate": "Jan 2022",
             "universityDegree": "Maths",
             "university": "The University of Long Country Names",
+            "AWSCertifiedSolutionsAssociate": 60, 
             "nationality": "British"
         },
         {

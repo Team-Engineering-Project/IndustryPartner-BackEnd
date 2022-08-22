@@ -8,7 +8,7 @@ const graduateProfileSchema = new mongoose.Schema({
     dfSubject: { type: String, required: true },
     dfGraduationDate: { type: String, required: true },
     universityDegree: { type: String },
-    university: { type: String },
+    university: { type: String }, 
     nationality: { type: String, required: true }
 });
 
