@@ -9,7 +9,8 @@ import chaiHttp from 'chai-http';
 import server from '../app.js';
 import testGraduate from '../testGraduate.json' assert {type: "json"};
 import testData from '../testGraduates.js';
-const testGraduatesArray = testData.graduates;
+// const testGraduatesArray = testData.graduates;
+const testGraduatesArray = testData.fullProfiles;
 
 import GraduateProfile from '../models/graduateProfile.model.js';
 
