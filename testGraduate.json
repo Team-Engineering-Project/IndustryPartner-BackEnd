@@ -1,12 +1,11 @@
 {
-    "firstname": "joe",
-    "lastname": "bloggs",
+    "firstName": "Joe",
+    "lastName": "Bloggs",
     "profileImage": "link/to/image.jpg",
     "pronouns": "he/him",
     "dfSubject": "SE",
     "dfGraduationDate": "June 2022",
-    "UniversityDegree": "English",
-    "University": "Brighton University",
-    "Nationality": "British"
+    "universityDegree": "English",
+    "university": "Brighton University",
+    "nationality": "British"
 }
-

@@ -8,6 +8,9 @@ import chaiHttp from 'chai-http';
 //require other code for testing
 import server from '../app.js';
 import testGraduate from '../testGraduate.json' assert {type: "json"};
+import testData from '../testGraduates.js';
+const testGraduatesArray = testData.graduates;
+
 import GraduateProfile from '../models/graduateProfile.model.js';
 
 chai.use(chaiHttp);
@@ -22,7 +25,7 @@ describe(`Testing requests on the database`, () => {
                 throw new Error();
             });
 
-        await GraduateProfile.insertMany(testGraduate)
+        await GraduateProfile.insertMany(testGraduatesArray)
             .then(() => console.log(`Database populated with test graduate profile`))
             .catch(error => {
                 console.log(`Error inserting graduate profile`);
@@ -53,8 +56,8 @@ describe(`Testing requests on the database`, () => {
                 .send();
 
 
-            expect(res.body.length).to.be.equal([testGraduate].length);
+            expect(res.body.length).to.be.equal(testGraduatesArray.length);
         });
     })
 
-});
+})
