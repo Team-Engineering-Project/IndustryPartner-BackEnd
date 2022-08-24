@@ -3,10 +3,11 @@ import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import bodyParser from 'body-parser';
+import cookieParser from 'cookie-parser';
 dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
 
 import { router as graduatesRoute } from './routes/graduatesRoute.js';
-import { router as userLoginRoute } from './routes/userLoginRoute.js';
+import authRoutes from './routes/authRoutes.js';
 
 const port = process.env.PORT;
 const host = process.env.HOST;
@@ -19,10 +20,16 @@ const main = async () => {
 
 main().catch(err => console.log(err));
 
-app.use(cors());
+app.use(cors({
+    origin: ["http://localhost:3000"],
+    methods: ["GET", "POST"],
+    credentials: true,
+  }));
 app.use(bodyParser.json());
+app.use(cookieParser());
+app.use(express.json());
 
-app.use(`/login`, userLoginRoute);
+app.use("/", authRoutes);
 app.use(`/graduates`, graduatesRoute);
 
 const server = app.listen(port, host, () => {
