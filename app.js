@@ -5,13 +5,12 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
 
-
 import { router as graduatesRoute } from './routes/graduatesRoute.js';
+import { router as userLoginRoute } from './routes/userLoginRoute.js';
 
 const port = process.env.PORT;
 const host = process.env.HOST;
 const app = express();
-
 
 const main = async () => {
     console.log(`Connecting to DB @ ${process.env.DB_URI}`);
@@ -23,6 +22,7 @@ main().catch(err => console.log(err));
 app.use(cors());
 app.use(bodyParser.json());
 
+app.use(`/login`, userLoginRoute);
 app.use(`/graduates`, graduatesRoute);
 
 const server = app.listen(port, host, () => {

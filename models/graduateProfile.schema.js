@@ -9,6 +9,8 @@ import technicalSkillSchema from './technicalSkill.schema.js';
 import feedbackSchema from './feedback.schema.js';
 import flairSchema from './flair.schema.js';
 import trainingModuleSchema from './trainingModule.schema.js';
+import professionalSkillSchema from './professionalSkill.schema.js';
+import badgesSchema from './badges.schema.js';
 
 const graduateProfileSchema = new mongoose.Schema({
     firstName: { type: String, required: true },
@@ -27,11 +29,11 @@ const graduateProfileSchema = new mongoose.Schema({
     qualifications: [qualificationSchema],
     achievements: [achievementSchema],
     technicalSkills: [technicalSkillSchema],
+    professionalSkills: [professionalSkillSchema],
+    badges: badgesSchema,
     feedback: [feedbackSchema],
     flair: [flairSchema],
     trainingProgress: [trainingModuleSchema]
-
-
 });
 
 export default graduateProfileSchema;

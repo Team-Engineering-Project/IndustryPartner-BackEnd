@@ -7,7 +7,7 @@ import chaiHttp from 'chai-http';
 
 //require other code for testing
 import server from '../app.js';
-import testGraduate from '../testGraduate.json' assert {type: "json"};
+// import testGraduate from '../testGraduate.json' assert {type: "json"};
 import testData from '../testGraduates.js';
 // const testGraduatesArray = testData.graduates;
 const testGraduatesArray = testData.fullProfiles;
