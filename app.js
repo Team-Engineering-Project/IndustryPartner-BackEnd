@@ -21,7 +21,7 @@ const main = async () => {
 main().catch(err => console.log(err));
 
 app.use(cors({
-    origin: ["https://cors-anywhere.herokuapp.com/http://localhost:3000"],
+    origin: ["http://localhost:3000"],
     methods: ["GET", "POST"],
     credentials: true,
   }));
