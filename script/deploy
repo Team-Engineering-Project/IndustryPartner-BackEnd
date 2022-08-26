@@ -4,7 +4,7 @@ ssh -t -t ec2-user@172.31.16.28 <<EOF
 
   cd ~/IndustryPartner-BackEnd
 
-  git pull origin main
+  git pull origin production
 
   curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
 
