@@ -2,7 +2,7 @@ const testData = {
     fullProfiles: [
         {
             "firstName": "Joe",
-            "lastName": "Bloggs",
+            "lastName": "Budden",
             "profileImage": "link/to/image.jpg",
             "pronouns": "he/him",
             "dfSubject": "SE",
@@ -72,38 +72,38 @@ const testData = {
             technicalSkills: [
                 {
                     skill: "Debugging",
-                    progress: "90"
+                    progress: "85"
                 },
                 {
                     skill: "Testing",
-                    progress: "40"
+                    progress: "67"
                 },
                 {
                     skill: "Object-Orientated Programming",
-                    progress: "70"
+                    progress: "47"
                 },
                 {
                     skill: "Pair programmer",
-                    progress: "90"
+                    progress: "72"
                 }
             ],
 
             professionalSkills: [
                 {
                     skill: "Presenting",
-                    progress: "90"
+                    progress: "52"
                 },
                 {
                     skill: "Communicating",
-                    progress: "40"
+                    progress: "33"
                 },
                 {
                     skill: "Project Management",
-                    progress: "70"
+                    progress: "90"
                 },
                 {
                     skill: "Organisational Concepts",
-                    progress: "90"
+                    progress: "66"
                 }
             ],
 
@@ -148,7 +148,7 @@ const testData = {
             trainingProgress: [
                 {
                     module: "Fundamentals",
-                    challenge: "Javascript Fundamentals Cahllenge",
+                    challenge: "Javascript Fundamentals Challenge",
                     result: "Pass"
                 },
                 {
@@ -248,19 +248,19 @@ const testData = {
             technicalSkills: [
                 {
                     skill: "Debugging",
-                    progress: "90"
+                    progress: "35"
                 },
                 {
                     skill: "Testing",
-                    progress: "40"
+                    progress: "49"
                 },
                 {
                     skill: "Object-Orientated Programming",
-                    progress: "70"
+                    progress: "82"
                 },
                 {
                     skill: "Pair programmer",
-                    progress: "90"
+                    progress: "35"
                 }
             ],
 
@@ -424,19 +424,19 @@ const testData = {
             technicalSkills: [
                 {
                     skill: "Debugging",
-                    progress: "90"
+                    progress: "20"
                 },
                 {
                     skill: "Testing",
-                    progress: "40"
+                    progress: "50"
                 },
                 {
                     skill: "Object-Orientated Programming",
-                    progress: "70"
+                    progress: "90"
                 },
                 {
                     skill: "Pair programmer",
-                    progress: "90"
+                    progress: "40"
                 }
             ],
 
@@ -600,11 +600,11 @@ const testData = {
             technicalSkills: [
                 {
                     skill: "Debugging",
-                    progress: "90"
+                    progress: "39"
                 },
                 {
                     skill: "Testing",
-                    progress: "40"
+                    progress: "45"
                 },
                 {
                     skill: "Object-Orientated Programming",
@@ -612,26 +612,26 @@ const testData = {
                 },
                 {
                     skill: "Pair programmer",
-                    progress: "90"
+                    progress: "30"
                 }
             ],
 
             professionalSkills: [
                 {
                     skill: "Presenting",
-                    progress: "90"
+                    progress: "67"
                 },
                 {
                     skill: "Communicating",
-                    progress: "40"
+                    progress: "90"
                 },
                 {
                     skill: "Project Management",
-                    progress: "70"
+                    progress: "50"
                 },
                 {
                     skill: "Organisational Concepts",
-                    progress: "90"
+                    progress: "40"
                 }
             ],
 
@@ -776,38 +776,38 @@ const testData = {
             technicalSkills: [
                 {
                     skill: "Debugging",
-                    progress: "90"
+                    progress: "59"
                 },
                 {
                     skill: "Testing",
-                    progress: "40"
+                    progress: "90"
                 },
                 {
                     skill: "Object-Orientated Programming",
-                    progress: "70"
+                    progress: "45"
                 },
                 {
                     skill: "Pair programmer",
-                    progress: "90"
+                    progress: "55"
                 }
             ],
 
             professionalSkills: [
                 {
                     skill: "Presenting",
-                    progress: "90"
+                    progress: "25"
                 },
                 {
                     skill: "Communicating",
-                    progress: "40"
+                    progress: "49"
                 },
                 {
                     skill: "Project Management",
-                    progress: "70"
+                    progress: "79"
                 },
                 {
                     skill: "Organisational Concepts",
-                    progress: "90"
+                    progress: "60"
                 }
             ],
 
@@ -952,38 +952,38 @@ const testData = {
             technicalSkills: [
                 {
                     skill: "Debugging",
-                    progress: "90"
+                    progress: "72"
                 },
                 {
                     skill: "Testing",
-                    progress: "40"
+                    progress: "33"
                 },
                 {
                     skill: "Object-Orientated Programming",
-                    progress: "70"
+                    progress: "44"
                 },
                 {
                     skill: "Pair programmer",
-                    progress: "90"
+                    progress: "66"
                 }
             ],
 
             professionalSkills: [
                 {
                     skill: "Presenting",
-                    progress: "90"
+                    progress: "50"
                 },
                 {
                     skill: "Communicating",
-                    progress: "40"
+                    progress: "80"
                 },
                 {
                     skill: "Project Management",
-                    progress: "70"
+                    progress: "39"
                 },
                 {
                     skill: "Organisational Concepts",
-                    progress: "90"
+                    progress: "25"
                 }
             ],
 
@@ -1583,8 +1583,8 @@ const testData = {
             ]
         },
         {
-            "firstName": "Joe",
-            "lastName": "Bloggs",
+            "firstName": "Anaz",
+            "lastName": "Ahmed",
             "profileImage": "link/to/image.jpg",
             "pronouns": "he/him",
             "dfSubject": "SE",
@@ -1759,8 +1759,8 @@ const testData = {
             ]
         },
         {
-            "firstName": "Joe",
-            "lastName": "Bloggs",
+            "firstName": "Bushra",
+            "lastName": "Siddiqui",
             "profileImage": "link/to/image.jpg",
             "pronouns": "he/him",
             "dfSubject": "SE",
@@ -1935,8 +1935,8 @@ const testData = {
             ]
         },
         {
-            "firstName": "Joe",
-            "lastName": "Bloggs",
+            "firstName": "Joseph",
+            "lastName": "Adenuga",
             "profileImage": "link/to/image.jpg",
             "pronouns": "he/him",
             "dfSubject": "DS",
@@ -2111,8 +2111,8 @@ const testData = {
             ]
         },
         {
-            "firstName": "Joe",
-            "lastName": "Bloggs",
+            "firstName": "Hugo",
+            "lastName": "Rafael",
             "profileImage": "link/to/image.jpg",
             "pronouns": "he/him",
             "dfSubject": "SE",
@@ -2287,8 +2287,8 @@ const testData = {
             ]
         },
         {
-            "firstName": "Joe",
-            "lastName": "Bloggs",
+            "firstName": "Rafee",
+            "lastName": "Ahmed",
             "profileImage": "link/to/image.jpg",
             "pronouns": "he/him",
             "dfSubject": "SE",
@@ -2463,8 +2463,8 @@ const testData = {
             ]
         },
         {
-            "firstName": "Joe",
-            "lastName": "Bloggs",
+            "firstName": "Adam",
+            "lastName": "Baker",
             "profileImage": "link/to/image.jpg",
             "pronouns": "he/him",
             "dfSubject": "CE",
@@ -2639,8 +2639,8 @@ const testData = {
             ]
         },
         {
-            "firstName": "Joe",
-            "lastName": "Bloggs",
+            "firstName": "Waqas",
+            "lastName": "Parvaiz",
             "profileImage": "link/to/image.jpg",
             "pronouns": "he/him",
             "dfSubject": "CE",
@@ -2815,8 +2815,8 @@ const testData = {
             ]
         },
         {
-            "firstName": "Joe",
-            "lastName": "Bloggs",
+            "firstName": "Hamza",
+            "lastName": "Aslam",
             "profileImage": "link/to/image.jpg",
             "pronouns": "he/him",
             "dfSubject": "CE",
@@ -3165,8 +3165,8 @@ const testData = {
             ]
         },
         {
-            "firstName": "Joe",
-            "lastName": "Bloggs",
+            "firstName": "Alistair",
+            "lastName": "Gibbons",
             "profileImage": "link/to/image.jpg",
             "pronouns": "he/him",
             "dfSubject": "DS",
@@ -3339,8 +3339,8 @@ const testData = {
             ]
         },
         {
-            "firstName": "Joe",
-            "lastName": "Bloggs",
+            "firstName": "Roxanna",
+            "lastName": "Turc",
             "profileImage": "link/to/image.jpg",
             "pronouns": "he/him",
             "dfSubject": "DS",
