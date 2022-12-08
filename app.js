@@ -20,7 +20,7 @@ app.use(express.json());
 app.use("/", authRoutes);
 app.use(`/graduates`, graduatesRoute);
 
-mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://DFXtraAdmin:j9kEjs9iB5VFyMOG@dfxtra.fiey4ml.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => app.listen(PORT, () => console.log(`Server Running on Port: http://localhost:${PORT}`)))
   .catch((error) => console.log(`${error} did not connect`));
 
