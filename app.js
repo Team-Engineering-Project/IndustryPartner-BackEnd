@@ -15,7 +15,11 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(express.json({ limit: '30mb', extended: true }));
 app.use(express.urlencoded({ limit: '30mb', extended: true }));
-app.use(cors());
+app.use(cors({
+    origin: ["http://dfxtra.co.uk"],
+    methods: ["GET", "POST"],
+    credentials: true,
+}));
 
 app.use("/", authRoutes);
 app.use(`/graduates`, graduatesRoute);
